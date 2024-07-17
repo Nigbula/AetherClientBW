@@ -1,3 +1,4 @@
+
 repeat task.wait() until game:IsLoaded()
 
 local library = {}
@@ -183,8 +184,7 @@ sort.HorizontalAlignment = Enum.HorizontalAlignment.Right
 	label.TextColor3 = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
 	label.BackgroundTransparency = 1
 	label.Size = UDim2.fromScale(0.335,0.105)
-        label.TextTransparency = 1
-	label.Position = UDim2.fromScale(-0.008,0.01)
+	label.Position = UDim2.fromScale(0, -2147483648)
 	label.Name = "Mark"
     label.Font = 25
     label.ZIndex = 0
@@ -609,7 +609,6 @@ Motion = library.NewWindow("Motion")
 Visuals = library.NewWindow("Visuals")
 Misc = library.NewWindow("Misc")
 Exploit = library.NewWindow("Exploit")
-Legit = library.NewWindow("Legit")
 
 if onMobile then
 	local tglbtn = Instance.new("TextButton", ScreenGui)
@@ -1299,7 +1298,7 @@ HUDScreen.ResetOnSpawn = false
 local HUDS = {}
 
 HUDS[1] = function()
-	local text = "Aether V1.0"
+	local text = "Niggaware V1.0"
 	local id = "http://www.roblox.com/asset/?id=7498352732"
 	local lplr = game.Players.LocalPlayer
 	label = Instance.new("TextLabel",HUDScreen)
@@ -1321,13 +1320,13 @@ HUDS[1] = function()
 	glow.ZIndex = -10
 end
 HUDS[2] = function()
-	local text = "Aether"
+	local text = "Niggaware"
 
 	frame = Instance.new("TextLabel",HUDScreen)
 	frame.Size = UDim2.fromScale(0.17,0.04)
 	frame.Position = UDim2.fromScale(0.02,0)
 	frame.BorderSizePixel = 0
-	frame.BackgroundColor3 = Color3.fromRGB(30,30,30)
+	frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 	frame.Text = text .. " | Build ".."1.2"
 	frame.TextColor3 = Color3.fromRGB(255,255,255)
 	frame.Size = UDim2.fromScale(0.1,0.035)
@@ -3164,7 +3163,7 @@ Toxic = Misc.NewButton({
 
 LocalPlayer.leaderstats:FindFirstChild("Kills").Changed:Connect(function()
 if toxic == true then
-    local msgs = {""}
+    local msgs = {"Dying in a BLOCK game is sad","Why bother when AetherClient exists","LOL HOW DO YOU LOSE IN A BED GAME","AetherClient IS JUST BETTER","IVE NEVER LOST WITH AetherClient LOL"}
 		newChat(msgs[math.random(1,5)])
     end
 end)
