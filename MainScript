@@ -183,6 +183,7 @@ sort.HorizontalAlignment = Enum.HorizontalAlignment.Right
 	label.TextColor3 = Color3.fromRGB(math.random(1,255),math.random(1,255),math.random(1,255))
 	label.BackgroundTransparency = 1
 	label.Size = UDim2.fromScale(0.335,0.105)
+        label.TextTransparency = 1
 	label.Position = UDim2.fromScale(-0.008,0.01)
 	label.Name = "Mark"
     label.Font = 25
@@ -1778,7 +1779,7 @@ AutoPot = Player.NewButton({
 	end
 })
 
-local msgs = {".gg/aetherclient Get AetherClient Now!","Even without AetherClient i wouldve still won.","AetherClient On Top⭐","Imagine being legit in 2024","Get AetherClient to win lol!",".gg/aetherclient to become good"}
+local msgs = {""}
 Chatspammer = Misc.NewButton({
 	Name = "Chatspammer",
 	Function = function(callback)
@@ -3163,7 +3164,7 @@ Toxic = Misc.NewButton({
 
 LocalPlayer.leaderstats:FindFirstChild("Kills").Changed:Connect(function()
 if toxic == true then
-    local msgs = {"Dying in a BLOCK game is sad","Why bother when AetherClient exists","LOL HOW DO YOU LOSE IN A BED GAME","AetherClient IS JUST BETTER","IVE NEVER LOST WITH AetherClient LOL"}
+    local msgs = {""}
 		newChat(msgs[math.random(1,5)])
     end
 end)
